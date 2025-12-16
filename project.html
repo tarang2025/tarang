@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce website</title>
+    <head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    padding: 20px;
+    margin: 0;
+
+}
+ nav{
+        height: 80px;
+        width: 100%;
+        background-color: black;
+        margin: 0 auto;
+        display: flex;
+        justify-content: left;
+    }
+    ul{
+        list-style-type: none;
+    }
+    ul li{
+        display: inline;
+        border-right: 1px bold aqua;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    ul li a{
+        color: white;
+        text-decoration: none;
+        padding: 12px;
+        font-size: large;
+    }
+    ul li a:hover{
+        color: goldenrod;
+        border-bottom: 1px bold goldenrod;
+    }
+
+.title {
+    margin-bottom: 25px;
+    color: aliceblue;
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+
+.product-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.cart{
+    background-color: darkorange;
+}
+
+
+@media (min-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 990px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+</style>
+<body>
+
+     <nav>
+    <ul>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">Log In</a></li>
+        <li><a href="#">Sign In</a></li>
+        <li><a href="#">Help</a></li>
+        
+    </ul>
+   </nav> 
+<h1 class="title">Top searches</h1>
+
+<div class="product-grid">
+
+    <div class="product-card">
+        <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/watch/s/i/i/premium-retro-vintage-classic-dad-my-hero-antique-metal-pocket-original-imagfhczzwzdry8m.jpeg?q=90" alt="Smart watch">
+        <h3>Pocket Watch</h3>
+        <p>showcases antique design</p>
+        <p>&#x20B9 750</p>
+        <button class="cart">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC4CLlmQjGWDMdclLTwFybUxVZxVPOCzSX_w&s" alt="table lamp">
+        <h3>Table Lamp</h3>
+        <p>no extra blue light </p>
+        <p>&#x20B9 820</p>
+        <button class="cart">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://m.media-amazon.com/images/I/715CeFp-7NL._AC_UF1000,1000_QL80_.jpg" alt="bluetooth speaker">
+        <h3>Bluetooth Speaker</h3>
+        <p>with exclusive surround sound </p>
+        <p>&#x20B9 9,999</p>
+        <button class="cart">Add to cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="https://rvrsp.in/wp-content/uploads/2024/09/professional-dslr-camera-with-zoom-lens.jpg" alt="dslr camera">
+        <h3>DSLR </h3>
+        <p>new deign , exclusive lens</p>
+        <p>&#x20B9 40,990</p>
+        <button class="cart">Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR94dIoxwPZ0JsQQZN4xoQfq21gjowR5z4aHwM12HxSkbBoXrYOze7ucY0CZFQWLNdiO7M_xzjEdI2ypTSIPea6AKUk6vNydWkCbfQQovYN" alt="colgate purple-white toothpaste">
+        <h3>Colgate purple-white toothpaste</h3>
+        <p>now with new purple-white-- corrects yellow tones on 1st use</p>
+        <p>&#x20B9 345</p>
+        <button class="cart">Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR3w7mkToEi166nYcArxLN4B0ADgDpM2F3bmGmQtxFL2IG2uvos35V4zCwywpC90meA0-seLl1eJWzD5daFRAfCiKAogNHjzfxYW9rfKf15" alt="maggie cup noodles">
+        <h3>Maggie Cup Noodles</h3>
+        <p>now get instant noodles anwhere</p>
+        <p>&#x20B9 49</p>
+        <button class="cart">Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT274fP_wB6Ag5b2sDgqD-WjftqtGOn7eyYos8zsYBo7IEf8wmaMJuwUxnTjD8xwQxjcJ6B581VWdSRP3d3tEHbw0Jzu-xeyW-pgxDJ5zfMcNvMdGDwlSIQOA" alt="JBL headphones">
+        <h3>JBL Tune 770 wireless headphones</h3>
+        <p>wireless over ear ANC headphones with Mic</p>
+        <p>&#x20Bp 4,999</p>
+        <button class="cart">Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTSpaS_pGvuby1xhlOFD1z_2o0_uBw9UQdsKvLEBZPwbuQKniSJxudiITbwZKEokM5mBMVbGYIyjlI4o2Z76hmJaT1vdUeka6pj2CANc_kitNFQaDqhTW8Eeg" alt="wrist watch">
+        <h3>Timex Men's Analog Watch</h3>
+        <p>new round dial analog watch</p>
+        <p>&#x20B9 3,500</p>
+        <button class="cart">Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQKZpVdVduwPQmMOhnjG-QeFtIusQZu90Ov4qjzsUYTj2_f2Bm4KVeEcCqPZGGJw-cwSke7gZu2iJzeeHzxp8hPvzNOtPsBtUI1qazur_tzSI1hxtIAxk5oFA" alt="bella-vita perfume">
+        <h3>Bella-Vita Perfume gift set</h3>
+        <p>luxury perfume gift set</p>
+        <p>&#x20B9 675</p>
+        <button class="cart">Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQLpmmECcnnu0r2PUZzZHkPfse-IFxcepSBxV4rdDPfVPOWsaD6QRHSIOK9SsnKCaxb1qJ-Nh7JzJOxSh2CE59jlD8u2N0pkGWTQ9-a6ihcU" alt="product image">
+        <h3>Puma men's running shoes</h3>
+        <p>elite calit running shoes</p>
+        <p>&#x20B9 4,499</p>
+        <button class="cart">Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ4KzZ4eiii2Agrtqt6rs_Us9ooPZQFZX7PIEb7oBJEq0wC-VW57cUdR5HV-_xmqvhVwQ5bZpp-xhABN1Vha2wXxkcmHHjyj03U61MNnOppcWp06_qwT46i" alt="sneakers">
+        <h3>Redtape Men's Sneakers</h3>
+        <p>Men's casual everyday wear lifestyle sneakers</p>
+        <p>&#x20B9 1,800</p>
+        <button class="cart">Add to cart</button>
+    </div>
+    <div class="product-card">
+        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTqn5qKu-50ZfTnE7w9wuOt5THYOgo01jJ2oWTEReDyB6kEufYUltdlHosbKKVf_1uiyDtJ7IumRayv1IM2efoFPH4iiPFpm896jKvxOCTgpoRA7gdlXR65hQ" alt="iphone cover">
+        <h3>Megsafe phone case cover for Iphone 15</h3>
+        <p>luxury thin case cover</p>
+        <p>&#x20B9 249</p>
+        <button class="cart">Add to cart</button>
+
+    </div>
+
+
+
+
+</div>
+
+</body>
+</html>
